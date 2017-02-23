@@ -39,9 +39,6 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    if (!_textAlignment) {
-        _textAlignment = NSTextAlignmentCenter;
-    }
     paragraphStyle.alignment = _textAlignment;
     paragraphStyle.lineSpacing = 5.0f;
     if (!self.textAttributes) {

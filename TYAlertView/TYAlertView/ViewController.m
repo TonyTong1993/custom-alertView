@@ -10,6 +10,7 @@
 #import "TYAlertView.h"
 #import "SCLButton.h"
 #import "AlertView.h"
+#import "PLAlertView.h"
 @interface ViewController ()<UIAlertViewDelegate>
 {
     AlertView *_alert;
@@ -41,22 +42,22 @@
 }
 - (IBAction)systemAlert{
     //系统自带的alertView无法调整字体样式
-   UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"检测到有新版本" message:@"1.优化了跑步入口和跑步界面\n2.全新的校园跑步规则，让跑步更加灵活！\n在此感谢所有支持我们的童鞋，欢迎大家继续提意见和建议～" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"现在更新", nil];
-   
-    [alertView show];
-//    NSString *title = @"检测到有新版本";
-//    NSString *message = @"1.优化了跑步入口和跑步界面2.全新的校园跑步规则，让跑步更加灵活";
-//    NSString *additions = @"在此感谢所有支持我们的童鞋，欢迎大家继续提意见和建议～";
-//   AlertView *alert = [AlertView alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert leftActionTitle:@"取消" rightActionTitle:@"现在更新" cancel:^{
-//       NSLog(@"cancel");
-//   } submit:^{
-//       NSLog(@"submit");
-//   }];
-//    alert.additions = additions;
-//    alert.messages = @[@"1.优化了跑步入口和跑步界面",@"2.全新的校园跑步规则，让跑步更加灵活"];
-//    alert.additionsAttributes = @{NSForegroundColorAttributeName:[UIColor orangeColor],NSFontAttributeName:[UIFont systemFontOfSize:15]};
-//    alert.textAlignment = NSTextAlignmentLeft;
-//    [self presentViewController:alert animated:YES completion:nil];
+//   PLAlertView *alertView = [[PLAlertView alloc] initWithTitle:@"检测到有新版本" message:@"1.优化了跑步入口和跑步界面\n2.全新的校园跑步规则，让跑步更加灵活\n 在此感谢所有支持我们的童鞋，欢迎大家继续提意见和建议～" delegate:self cancelButtonTitle:@"取消" submitButtonTitle:@"现在更新"];
+//   
+//    [alertView show];
+    NSString *title = @"检测到有新版本";
+    NSString *message = @"1.优化了跑步入口和跑步界面2.全新的校园跑步规则，让跑步更加灵活";
+    NSString *additions = @"在此感谢所有支持我们的童鞋，欢迎大家继续提意见和建议～";
+   AlertView *alert = [AlertView alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert leftActionTitle:@"取消" rightActionTitle:@"现在更新" cancel:^{
+       NSLog(@"cancel");
+   } submit:^{
+       NSLog(@"submit");
+   }];
+    alert.additions = additions;
+    alert.messages = @[@"1.优化了跑步入口和跑步界面",@"2.全新的校园跑步规则，让跑步更加灵活"];
+    alert.additionsAttributes = @{NSForegroundColorAttributeName:[UIColor orangeColor],NSFontAttributeName:[UIFont systemFontOfSize:15]};
+    alert.textAlignment = NSTextAlignmentLeft;
+    [self presentViewController:alert animated:YES completion:nil];
 }
 #pragma mark----UIAlertViewDelegate
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{

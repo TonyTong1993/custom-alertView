@@ -18,6 +18,7 @@
 		EB29C55B1E5D5AE900104E6F /* TYAlertViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB29C55A1E5D5AE900104E6F /* TYAlertViewUITests.m */; };
 		EB29C5701E5D72EE00104E6F /* TYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB29C56F1E5D72EE00104E6F /* TYAlertView.m */; };
 		EB29C5731E5D7C2400104E6F /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB29C5721E5D7C2400104E6F /* AlertView.m */; };
+		EB3F47621E5EB3F100E81D41 /* PLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3F47611E5EB3F100E81D41 /* PLAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		EB29C56F1E5D72EE00104E6F /* TYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertView.m; sourceTree = "<group>"; };
 		EB29C5711E5D7C2400104E6F /* AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
 		EB29C5721E5D7C2400104E6F /* AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
+		EB3F47601E5EB3F100E81D41 /* PLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAlertView.h; sourceTree = "<group>"; };
+		EB3F47611E5EB3F100E81D41 /* PLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,8 @@
 				EB29C56F1E5D72EE00104E6F /* TYAlertView.m */,
 				EB29C5711E5D7C2400104E6F /* AlertView.h */,
 				EB29C5721E5D7C2400104E6F /* AlertView.m */,
+				EB3F47601E5EB3F100E81D41 /* PLAlertView.h */,
+				EB3F47611E5EB3F100E81D41 /* PLAlertView.m */,
 			);
 			name = AlertView;
 			sourceTree = "<group>";
@@ -372,6 +377,7 @@
 				EB29C53D1E5D5AE900104E6F /* ViewController.m in Sources */,
 				EB29C53A1E5D5AE900104E6F /* AppDelegate.m in Sources */,
 				EB29C5701E5D72EE00104E6F /* TYAlertView.m in Sources */,
+				EB3F47621E5EB3F100E81D41 /* PLAlertView.m in Sources */,
 				EB29C5731E5D7C2400104E6F /* AlertView.m in Sources */,
 				EB29C5371E5D5AE900104E6F /* main.m in Sources */,
 			);
